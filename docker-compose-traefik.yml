@@ -12,7 +12,7 @@ services:
             - traefik
         labels:
             - "traefik.enable=true"
-            - "traefik.http.services.homepage.loadbalancer.server.port=80"
+            - "traefik.http.services.homepage.loadbalancer.server.port=8000"
             - "traefik.http.routers.homepage.rule=Host(`drane.one`)"
             - "traefik.http.routers.homepage.entrypoints=websecure"
             - "traefik.http.routers.homepage.tls.certresolver=letsencryptresolver"
