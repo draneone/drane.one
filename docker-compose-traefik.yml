@@ -1,0 +1,24 @@
+version: '3.7'
+
+services:
+    homepage:
+        image: draneone/homepage
+        build:
+            context: ./draneone
+            dockerfile: Dockerfile
+        ports:
+            - "8000:5001"
+        networks:
+            - traefik
+        labels:
+            - "traefik.enable=true"
+            - "traefik.http.services.homepage.loadbalancer.server.port=80"
+            - "traefik.http.routers.homepage.rule=Host(`drane.one`)"
+            - "traefik.http.routers.homepage.entrypoints=websecure"
+            - "traefik.http.routers.homepage.tls.certresolver=letsencryptresolver"
+        restart: unless-stopped
+
+networks:
+    traefik:
+        name: traefik
+        external: true

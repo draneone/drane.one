@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+}
+
+body {
+    font-family: "JetBrains Mono Light", monospace;
+    position: fixed;
+    overflow: hidden;
+    overscroll-behavior-y: none;
+    color: white;
+    background: black;
+    background: radial-gradient(circle at bottom center, rgba(60, 60, 60, 1) 0%, rgba(0, 0, 0, 1) 58%);
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+canvas {
+    opacity: 0;
+    touch-action: none;
+    animation: fade-in 2s ease 0s forwards;
+}
+
+.flex-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.hello {
+    width: 20rem;
+}

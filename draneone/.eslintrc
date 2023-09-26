@@ -1,0 +1,37 @@
+{
+	"extends": [
+		"plugin:react/recommended",
+		"prettier"
+	],
+	"overrides": [
+	],
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	},
+	"plugins": [
+		"react"
+	],
+	"rules": {
+		"indent": ["error", "tab"],
+		"react/react-in-jsx-scope": "off",
+		"quotes": "off",
+		"react/prop-types": "off",
+		"import/prefer-default-export": "off",
+		"react/no-unknown-property": "off",
+		"react/jsx-props-no-spreading": "off",
+		"react/no-array-index-key": "off",
+		"no-unused-expressions": "off",
+		"jsx-a11y/click-events-have-key-events": "off",
+		"jsx-a11y/no-static-element-interactions": "off",
+		"no-lone-blocks": "off",
+		"no-console": "off",
+		"no-unused-vars": "warn",
+		"no-bitwise": "off"
+	}
+}

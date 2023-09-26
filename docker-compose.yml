@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+    homepage:
+        image: draneone/homepage
+        build:
+            context: ./draneone
+            dockerfile: Dockerfile
+        ports:
+            - "8000:5001"
+        restart: unless-stopped

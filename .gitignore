@@ -1,0 +1,7 @@
+virtual
+/draneone_main/node_modules
+/draneone_main/yarn.lock
+
+.idea
+/draneone/yarn.lock
+/node_modules
