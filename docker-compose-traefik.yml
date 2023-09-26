@@ -7,7 +7,7 @@ services:
             context: ./draneone
             dockerfile: Dockerfile
         ports:
-            - "8000:5001"
+            - "80:5001"
         networks:
             - traefik
         labels:
