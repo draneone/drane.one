@@ -7,12 +7,12 @@ services:
             context: ./draneone
             dockerfile: Dockerfile
         ports:
-            - "8000:5001"
+            - "5001:5001"
         networks:
             - traefik
         labels:
             - "traefik.enable=true"
-            - "traefik.http.services.homepage.loadbalancer.server.port=8000"
+            - "traefik.http.services.homepage.loadbalancer.server.port=5001"
             - "traefik.http.routers.homepage.rule=Host(`drane.one`)"
             - "traefik.http.routers.homepage.entrypoints=websecure"
             - "traefik.http.routers.homepage.tls.certresolver=letsencryptresolver"

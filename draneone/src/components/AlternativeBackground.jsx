@@ -1,4 +1,5 @@
 import {Depth, LayerMaterial, Noise} from "lamina";
+import * as THREE from 'three';
 
 function AlternativeBackground() {
 	return (
