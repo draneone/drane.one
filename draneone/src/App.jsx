@@ -4,6 +4,7 @@ import {AccumulativeShadows, Environment, Html, RandomizedLight,} from "@react-t
 import Typist from "react-typist-component";
 import RotatingOctahedron from "./components/RotatingOctahedron.jsx";
 import AlternativeBackground from "./components/AlternativeBackground.jsx";
+import sunset from './assets/venice_sunset_1k.hdr';
 
 function App() {
 	const [clicked, click] = useState(false);
@@ -35,7 +36,7 @@ function App() {
 
 				</AccumulativeShadows>
 
-				<Environment preset={"sunset"} background blur={0.4}/>
+				<Environment files={sunset} background blur={0.4}/>
 
 				{clicked ? (
 					<>
