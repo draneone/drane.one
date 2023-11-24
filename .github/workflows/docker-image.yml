@@ -8,10 +8,17 @@ on:
 
 jobs:
   run:
-    # noinspection YAMLSchemaValidation
-    runs-on: linux
-
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v2
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v1
+    - name: Check if network exists
+      id: check_network
+      run: echo "::set-output name=exists::$( (docker network ls | grep traefik_proxy > /dev/null) && echo true || echo false )"
+    - name: Create network if not exists
+      run: docker network create traefik_proxy
+      if: steps.check_network.outputs.exists == 'false'
     - name: Run server
       run: docker compose -f docker-compose-traefik.yml up --build -d
+
