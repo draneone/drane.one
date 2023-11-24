@@ -1,6 +1,6 @@
 ## drane.one
 
-### Personal homepage using React and ThreeJS (is up on [drane.one](https://drane.one/))
+### Personal homepage using React and ThreeJS
 
 Slight overkill, but I really wanted to spin some octahedron.
 
