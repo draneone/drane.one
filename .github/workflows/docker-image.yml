@@ -15,9 +15,9 @@ jobs:
       uses: docker/setup-buildx-action@v1
     - name: Check if network exists
       id: check_network
-      run: echo "::set-output name=exists::$( (docker network ls | grep traefik_proxy > /dev/null) && echo true || echo false )"
+      run: echo "::set-output name=exists::$( (docker network ls | grep traefik > /dev/null) && echo true || echo false )"
     - name: Create network if not exists
-      run: docker network create traefik_proxy
+      run: docker network create traefik
       if: steps.check_network.outputs.exists == 'false'
     - name: Run server
       run: docker compose -f docker-compose-traefik.yml up --build -d
