@@ -26,7 +26,8 @@ body,
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: "JetBrains Mono Light", monospace;
+
     position: fixed;
     overflow: hidden;
     overscroll-behavior-y: none;
@@ -230,7 +231,7 @@ button:hover {
 }
 
 .decals p {
-    font-family: 'Inter var', serif;
+    font-family: "JetBrains Mono Light", monospace;
     font-size: 0.7rem;
     padding-bottom: 15px;
 }
@@ -307,6 +308,12 @@ button:hover {
     gap: 0.2rem;
 }
 
+.hello {
+    font-family: "JetBrains Mono Light", monospace;
+    font-size: large;
+    margin-bottom: 1rem;
+}
+
 @media screen and (max-width: 600px) {
     .section--container {
         margin-left: 100%;
@@ -332,5 +339,8 @@ button:hover {
         display: none;
         top: 20%;
         left: 75%;
+    }
+    .flex-link {
+        display: none;
     }
 }

@@ -68,7 +68,7 @@ function Home() {
 						<Html position={[-1, -1.5, -2]}>
 							<Typist startDelay={100}>
 								<div className={"flex-list"}>
-									<a href={"https://www.linkedin.com/in/%D0%B0%D0%BD%D0%B4%D1%80%D0%B5%D0%B9-%D1%82%D0%B0%D1%85%D0%BC%D0%B0%D0%B7%D1%8F%D0%BD-087988180/"}>LinkedIn</a>
+									{/*<a href={"https://www.linkedin.com/in/%D0%B0%D0%BD%D0%B4%D1%80%D0%B5%D0%B9-%D1%82%D0%B0%D1%85%D0%BC%D0%B0%D0%B7%D1%8F%D0%BD-087988180/"}>LinkedIn</a>*/}
 									<a href={"https://github.com/draneone"}>GitHub</a>
 									<a href={"https://drane.itch.io"}>itch.io</a>
 								</div>
@@ -78,7 +78,7 @@ function Home() {
 						<Html position={[0.5, -1.5, -2]}>
 							<Typist startDelay={600}>
 								<div className={"flex-list"}>
-									<a href={"https://steamcommunity.com/id/ghfhbvnvm"}>Steam</a>
+									{/*<a href={"https://steamcommunity.com/id/ghfhbvnvm"}>Steam</a>*/}
 									<a href={"https://t.me/drane_one"}>Telegram</a>
 									<a href={"https://reddit.com/u/drane_one"}>Reddit</a>
 								</div>
