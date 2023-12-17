@@ -7,6 +7,6 @@ import eslint from 'vite-plugin-eslint';
 export default defineConfig({
 	base: "./",
 	plugins: [react(), eslint()],
-	assetsInclude: ['**/*.hdr'],
+	assetsInclude: ['**/*.hdr', "**/*.glb"],
 
 });

@@ -1,14 +1,23 @@
 import {Depth, LayerMaterial, Noise} from "lamina";
 import * as THREE from 'three';
+import {useFrame} from "@react-three/fiber";
+import {useState} from "react";
+import {state} from "../store.js";
 
 function AlternativeBackground() {
+	const [colorB, setColorB] = useState(state.color);
+
+	useFrame(()=>{
+		setColorB(state.color);
+	});
+
 	return (
 		<mesh scale={100}>
 			<boxGeometry args={[1, 1, 1]}/>
 			<LayerMaterial side={THREE.BackSide}>
 				<Depth
-					colorB="red"
-					colorA="skyblue"
+					colorB={colorB}
+					colorA={"skyblue"}
 					alpha={1}
 					mode="normal"
 					near={130}
