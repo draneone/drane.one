@@ -2,8 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {
 	createBrowserRouter,
-	RouterProvider,
-	redirect
+	RouterProvider
 } from "react-router-dom";
 
 import Home from './pages/home/Home.jsx'
@@ -15,11 +14,7 @@ const router = createBrowserRouter([
 	{
 		path: "*",
 		element: <><Home/><MainOverlay/></>,
-	},
-	{
-		path: "/tg_channel",
-		loader: () => redirect("https://t.me/+79MzokDRuntmNTZi"),
-	},
+	}
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

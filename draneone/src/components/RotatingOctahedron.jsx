@@ -31,6 +31,7 @@ function RotatingOctahedron({clicked, click, color, setCurrentColor}) {
 				castShadow={true}
 				rotation-y={lastRot}
 				onClick={() => clickO()}
+				receiveShadow={true}
 				onPointerOver={() => document.body.style.cursor = 'pointer'}
 				onPointerOut={() => document.body.style.cursor = 'default'}
 			>

@@ -8,6 +8,7 @@ Slight overkill, but I really wanted to spin some octahedron.
 
 Also pretty clean project, using:
 React, ThreeJS, [@react-three/fiber](https://github.com/pmndrs/react-three-fiber),
+[valtio](https://valtio.pmnd.rs/),
 Vite, ESLint
 Docker, Docker Compose, GitHub Actions etc.
 
